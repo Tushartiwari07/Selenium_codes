@@ -14,9 +14,8 @@ public class CrossBrowserLaunch
 
 	@Parameters("Browser")
 	@Test
-	public void launch(@Optional("CHROME" ) String browserName)
+	public void launch(@Optional("CHROME") String browserName)
 	{
-
 		if(browserName.equalsIgnoreCase("chrome")) {
                  driver= new ChromeDriver();
 		}
